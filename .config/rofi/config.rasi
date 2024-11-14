@@ -1,0 +1,29 @@
+//@theme "~/.config/rofi/dracula.rasi"
+//@theme "~/.config/rofi/gruvbox.rasi"
+//@theme "~/.config/rofi/murz.rasi"
+//@theme "~/.config/rofi/nord.rasi"
+@theme "~/.config/rofi/rounded-nord-dark.rasi"
+//@theme "~/.config/rofi/rounded-dark.rasi"
+
+
+configuration {
+    modi: "run,drun,window";
+    display-drun: "Applications";
+    display-window: "Windows";
+    drun-display-format: "{name}";
+    font: "mononoki Nerd Font Regular 12";
+}
+
+window {
+    width: 55%;
+}
+
+listview {
+    padding: 8 8;
+    columns: 1;
+    lines: 8;
+}
+
+element-icon {
+    size: 20;
+}
