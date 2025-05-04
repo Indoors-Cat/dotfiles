@@ -9,6 +9,7 @@ return {
       { "<leader>h", group = "Home" },
       { "<leader>l", group = "LSP" },
       { "<leader>m", group = "Minimap" },
+      { "<leader>s", group = "Splits" },
       { "<leader>t", group = "File Tree" },
     },
   },
