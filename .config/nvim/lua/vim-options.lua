@@ -11,7 +11,7 @@ vim.opt.termguicolors = true
 ---------------------------
 --- Setting Colorscheme ---
 ---------------------------
-vim.cmd.colorscheme "catppuccin-mocha" -- To add colorschems add them to the themes.lua file inside of lua/plugins/
+vim.cmd.colorscheme "tokyonight-storm" -- To add colorschems add them to the themes.lua file inside of lua/plugins/
 
 ----------------
 --- Keymaps: ---
@@ -26,6 +26,12 @@ vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Window Split Management:
+vim.keymap.set("n", "<leader>sn", "<CMD>vs<CR>")
+vim.keymap.set("n", "<leader>sc", "<C-w>o")
+vim.keymap.set("n", "<leader>sh", "<C-w>H")
+vim.keymap.set("n", "<leader>sv", "<C-w>K")
 
 --- Telescope: ---
 vim.keymap.set("n", "<leader>ff", "<CMD>Telescope find_files<CR>", {})
@@ -42,7 +48,7 @@ vim.keymap.set("n", "<leader>lm", "<CMD>Mason<CR>", {desc = "Open Mason"} )
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, {desc = "LSP Format"} )
 
 --- NeoTree ---
-vim.keymap.set("n", "<leader>tt", ":Neotree filesystem Toggle left<CR>", {desc = "Toggle File Tree"} )
+vim.keymap.set("n", "<leader>tt", ":Neotree filesystem toggle left<CR>", {desc = "Toggle File Tree"} )
 --- NeoMiniMap ---
 vim.keymap.set("n", "<leader>mm", "<cmd>Neominimap Toggle<CR>", {desc = "Toggle MiniMap"} )
 vim.keymap.set("n", "<leader>mr", "<cmd>Neominimap refresh<CR>", {desc = "Refresh MiniMap"} )
